@@ -88,4 +88,9 @@ android {
     lintOptions {
         abortOnError false
     }
+
+    packagingOptions{
+        doNotStrip '*/mips/*.so'
+        doNotStrip '*/mips64/*.so'
+    }
 }
